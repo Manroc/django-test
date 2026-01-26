@@ -16,8 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from polls import views
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("<h1>Hiiii from Manish🙋‍♂️</h1>")
 
 urlpatterns = [
+     path("", home),
     path('admin/', admin.site.urls),
     path("polls/", views.index, name="index"),
 ]
