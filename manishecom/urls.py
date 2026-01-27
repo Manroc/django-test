@@ -20,7 +20,7 @@ from polls import views
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("<h1>Hiiii from Manish🙋‍♂️</h1>")
+    return HttpResponse("<h1>Hiiii from Manish v2🙋‍♂️</h1>")
 
 urlpatterns = [
      path("", home),
