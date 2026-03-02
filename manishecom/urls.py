@@ -18,10 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from polls import views
 from django.http import HttpResponse
+from django.conf import settings
 
 def home(request):
-    return HttpResponse("<h1>Hiiii from Manish v2🙋‍♂️</h1>")
-
+    return HttpResponse(
+        f"<h1>Hiiii from Manish v4 🙋‍♂️ {settings.SECRET_KEY1}</h1>"
+    )
+ 
 urlpatterns = [
      path("", home),
     path('admin/', admin.site.urls),
