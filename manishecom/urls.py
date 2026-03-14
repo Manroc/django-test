@@ -22,7 +22,7 @@ from django.conf import settings
 
 def home(request):
     return HttpResponse(
-        f"<h1>Hiiii from Manish with 2 tier app. reloaded with pipeline</h1>"
+        f"<h1>Hiiii from Manish with 2 tier app. reloaded with pipeline v5</h1>"
     )
  
 urlpatterns = [
